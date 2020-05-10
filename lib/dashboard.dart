@@ -85,12 +85,36 @@ class _DashboardState extends State<Dashboard> {
         mainAxisSpacing: 12.0,
         padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
         children: <Widget>[
-          MyTiles(Icons.live_tv, "Watch Live!", 0xFFFF5722),
-          MyTiles(Icons.content_paste, "Schedule", 0xFFFF9800),
-          MyTiles(Icons.people, "Presudenthi", 0xFF2979FF),
-          MyTiles(Icons.camera, "Media", 0xFF009688),
-          MyTiles(Icons.add_alert, "Alerts!", 0xFF40C4FF),
-          MyTiles(Icons.call, "Contact Us", 0xFF4CAF50)
+          new GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushNamed('/presudenthi');
+              },
+              child: MyTiles(Icons.live_tv, "Watch Live!", 0xFFFF5722)),
+          new GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushNamed('/presudenthi');
+              },
+              child: MyTiles(Icons.content_paste, "Schedule", 0xFFFF9800)),
+          new GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushNamed('/presudenthi');
+              },
+              child: MyTiles(Icons.people, "Presudenthi", 0xFF2979FF)),
+          new GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushNamed('/presudenthi');
+              },
+              child: MyTiles(Icons.camera, "Media", 0xFF009688)),
+          new GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushNamed('/presudenthi');
+              },
+              child: MyTiles(Icons.add_alert, "Alerts!", 0xFF40C4FF)),
+          new GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushNamed('/presudenthi');
+              },
+              child: MyTiles(Icons.call, "Contact Us", 0xFF4CAF50))
         ],
         staggeredTiles: [
           StaggeredTile.extent(2, 120),
